@@ -1,13 +1,11 @@
 package ma.achraf.cinema.entities;
 
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
-
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -26,7 +24,7 @@ public class Ticket {
 	@Column(length = 75)
 	private String nomClient;
 	private double prix;
-	@Column(unique=false,nullable=true)
+	@Column(unique = false, nullable = true)
 	private Integer codePayement;
 	private boolean reserve;
 	@ManyToOne

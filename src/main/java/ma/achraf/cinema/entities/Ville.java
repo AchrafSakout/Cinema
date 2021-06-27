@@ -24,6 +24,6 @@ public class Ville {
 	private Long id;
 	private String name;
 	private double longitude, latitude, altitude;
-	@OneToMany(mappedBy = "ville" )
+	@OneToMany(mappedBy = "ville")
 	private Collection<Cinema> cinemas;
 }

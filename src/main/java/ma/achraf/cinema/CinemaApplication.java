@@ -11,6 +11,7 @@ import ma.achraf.cinema.service.ICinemaInitService;
 public class CinemaApplication implements CommandLineRunner {
 	@Autowired
 	private ICinemaInitService cinemaInitService;
+
 	public static void main(String[] args) {
 		SpringApplication.run(CinemaApplication.class, args);
 	}
